@@ -1,10 +1,24 @@
-<h1 align="left">ViTAEv2: Vision Transformer Advanced by Exploring Inductive Bias for Image Recognition and Beyond<a href="https://arxiv.org/abs/2202.10108"><img src="https://img.shields.io/badge/arXiv-Paper-<COLOR>.svg" ></a></h1> 
+<h1 align="left">ViTAEv2: Vision Transformer Advanced by Exploring Inductive Bias for Image Recognition and Beyond<a href="https://arxiv.org/abs/2202.10108"><img src="https://img.shields.io/badge/arXiv-Paper-<COLOR>.svg" ></a></h1>
 
 <p align="center">
   <a href="#Updates">Updates</a> |
   <a href="#introduction">Introduction</a> |
   <a href="#statement">Statement</a> |
 </p>
+
+## Service Usage
+
+python tools/test.py /mmdetection/Object-Detection/configs/swin/mask_rcnn_swin_tiny_patch4_window7_mstrain_480-800_adamw_3x_coco.py /mmdetection/Object-Detection/main_model/mask_rcnn_swin_tiny_patch4_window7.pth --eval bbox segm
+
+Build
+```
+docker-compose up -d --build
+```
+Test
+```
+python3 test.py
+```
+
 
 ## Current applications
 
@@ -34,7 +48,7 @@
 
 ***19/10/2021***
 - The paper is accepted by Neurips'2021! The code will be released soon!
-  
+
 ***06/08/2021***
 - The paper is post on arxiv! The code will be made public available once cleaned up.
 

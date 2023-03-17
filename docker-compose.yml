@@ -1,0 +1,12 @@
+version: '3'
+
+services:
+  object-detection:
+    build:
+      context: ./Object-Detection
+      dockerfile: Dockerfile
+    command: python /mmdetection/Object-Detection/app.py
+    volumes:
+      - ./Object-Detection:/mmdetection/Object-Detection
+    ports:
+      - 8000:8000
