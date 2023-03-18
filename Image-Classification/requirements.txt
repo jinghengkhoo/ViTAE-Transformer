@@ -1,0 +1,7 @@
+torchvision==0.9.1
+timm==0.4.12
+pyyaml
+ipdb
+Flask
+flask-restful
+flask-cors

@@ -1,10 +1,24 @@
-<h1 align="left">ViTAEv2: Vision Transformer Advanced by Exploring Inductive Bias for Image Recognition and Beyond<a href="https://arxiv.org/abs/2202.10108"><img src="https://img.shields.io/badge/arXiv-Paper-<COLOR>.svg" ></a></h1> 
+<h1 align="left">ViTAEv2: Vision Transformer Advanced by Exploring Inductive Bias for Image Recognition and Beyond<a href="https://arxiv.org/abs/2202.10108"><img src="https://img.shields.io/badge/arXiv-Paper-<COLOR>.svg" ></a></h1>
 
 <p align="center">
   <a href="#Updates">Updates</a> |
   <a href="#introduction">Introduction</a> |
   <a href="#statement">Statement</a> |
 </p>
+
+## API Server Usage
+Download <a href="https://drive.google.com/file/d/1Ufnts7n-reeEN66UZD7I-3pjf2omhxPK/view?usp=share_link">ViTAE-T.pth.tar</a> into Image-Classification/
+
+Run
+```
+docker-compose up -d --build
+```
+Test
+```
+python run-image-classify.py
+```
+
+
 
 ## Current applications
 
@@ -34,7 +48,7 @@
 
 ***19/10/2021***
 - The paper is accepted by Neurips'2021! The code will be released soon!
-  
+
 ***06/08/2021***
 - The paper is post on arxiv! The code will be made public available once cleaned up.
 
