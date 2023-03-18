@@ -27,7 +27,7 @@ import torch.nn as nn
 import torchvision.utils
 from torch.nn.parallel import DistributedDataParallel as NativeDDP
 
-from timm.data import Dataset, resolve_data_config, RealLabelsImagenet
+from timm.data import resolve_data_config, RealLabelsImagenet
 from timm.models import load_checkpoint, create_model
 from timm.utils import *
 from timm.utils import ApexScaler, NativeScaler
@@ -396,7 +396,7 @@ def validate(model, loader, loss_fn, args, amp_autocast=suppress, log_suffix='',
                 output = model(input)
             if isinstance(output, (tuple, list)):
                 output = output[0]
-            
+
             if real_labels is not None:
                 real_labels.add_result(output)
 
